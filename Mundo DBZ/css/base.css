@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+@font-face {
+  font-family: "Saiyan-Sans";
+  src: url("Saiyan-Sans.ttf");
+}
+
+/* Marcações ou Tags */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400; /* Regular */
+}
+
+main h1 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+main h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #7fcb07;
+}
+
+/* Classes e identificações */
+section#menu-principal {
+  background-color: #e55e2e;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Alinhamento vertical */
+  justify-content: space-between;
+}
+
+section#menu-principal > div {
+  display: flex;
+  align-items: center; /* Alinhamento vertical */
+}
+section#menu-principal > div > span {
+  margin-left: 13px;
+  font-family: "Saiyan-Sans", serif;
+  font-size: 20px;
+}
+
+section#menu-principal > nav > a:link,
+section#menu-principal > nav > a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+nav#bread-crumb {
+  background-color: #fda402;
+  padding: 7px 10px;
+  color: #ffffff;
+  font-weight: 600; /* Semibold */
+}
+
+nav#bread-crumb > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav#bread-crumb > span + span {
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+main > div {
+  background-color: #7fcb07;
+  margin: 30px 20px;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+main h1 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.card {
+  border-radius: 10px;
+  /* Efeito de sombra */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+
+.card > h2{
+  color: #7fcb07;
+}
+
+footer {
+  background-color: #e55e2e;
+  padding: 10px;
+  margin-top: 20px;
+}
+footer > p {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
