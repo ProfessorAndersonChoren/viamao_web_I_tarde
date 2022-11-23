@@ -1,0 +1,98 @@
+/* Versão smartphone / Genérica */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background-color: #cc5050;
+}
+
+header {
+  background-color: #e3350d;
+}
+
+header > h1 {
+  font-size: 1rem; /* Por padrão equivale à 14px */
+  color: #ffffff;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 88px;
+  row-gap: 20px;
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Nesse caso é o eixo X */
+}
+
+.card > h2 {
+  font-size: 0.75rem;
+}
+
+.card > img {
+  width: 5rem;
+}
+
+/* Cores */
+.bg-light-green {
+  background-color: #9bcc50;
+  color: #ffffff;
+}
+.bg-orange {
+  background-color: #fd7d24;
+  color: #ffffff;
+}
+
+.bg-light-blue {
+  background-color: #4592c4;
+  color: #ffffff;
+}
+
+.bg-olive {
+  background-color: #739f40;
+  color: #ffffff;
+}
+
+.bg-yellow {
+  background-color: #f7de3f;
+  color: #ffffff;
+}
+
+.bg-brown {
+  background-color: #d56723;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  /* Versão tablet */
+  html {
+    font-size: 22px;
+  }
+  main {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (min-width: 996px) {
+  /* Versão desktop */
+  html {
+    font-size: 28px;
+  }
+  main {
+    grid-template-columns: repeat(4, auto);
+  }
+}
